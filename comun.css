@@ -1,0 +1,48 @@
+:root{
+    --primaryColor: #000;
+    --secColor: #fff;
+    --terColor: ;
+    --forColor: ;
+    --fifthColor: ;
+}
+body{
+    
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+}
+
+.isla{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 20px;
+    font-size: 1.2em;
+    padding: 12px;
+    z-index: 1020;
+    
+}
+.button{
+    background-color: var(--primaryColor);
+    color: var(--secColor);
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 24px;
+    text-align: center; 
+    transition: .8s;
+    
+}
+.button:hover{
+    border-color: var(--secColor);
+    color: white;
+    box-shadow: 0 0.5em .5em -.4em #f1ff5c;
+    transform: translateY(-.25em);
+    cursor: pointer;
+}
+.footer{
+    background-color: green;
+}
+.btn{
+    background-color: var(--primaryColor);
+    color: var(--secColor);;
+}

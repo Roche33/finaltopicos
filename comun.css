@@ -1,9 +1,9 @@
 :root{
-    --primaryColor: #000;
-    --secColor: #fff;
-    --terColor: ;
-    --forColor: ;
-    --fifthColor: ;
+    --primaryColor: #1C1C1C;
+    --secColor: #FFFFFF;
+    --terColor: #264653;
+    --forColor: #FADADD;
+    --fifthColor: #D72638;
 }
 body{
     

@@ -7,9 +7,9 @@
 }
 body{
     
-    background-color: var(--primaryColor);
-    margin: 0;
-    padding: 0;
+    background-color: var(--secColor);
+    margin: 0 10rem;
+   
 }
 
 .isla{

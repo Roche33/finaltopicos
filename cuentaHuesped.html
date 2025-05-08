@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/cuentaHuesped.css">
+</head>
+
+<body>
+
+    <div>
+        <!-- Radios + Labels -->
+        <input type="radio" name="menu" id="home" checked hidden>
+        <input type="radio" name="menu" id="ediciones" hidden>
+        <input type="radio" name="menu" id="reservaciones" hidden>
+
+        <nav class="bg-[#FADADD] flex justify-center p-3 gap-4 text-[#264653] shadow-md">
+            <label for="home" class="tracking-wide hover:underline cursor-pointer">HOME</label>
+            <label for="ediciones" class="tracking-wide hover:underline cursor-pointer">EDICIONES</label>
+            <label for="reservaciones" class="tracking-wide hover:underline cursor-pointer">RESERVACIONES</label>
+        </nav>
+
+        <!-- Contenido (hermano de los inputs y labels) -->
+        <div class="p1-4">
+            <div class="contenido bg-[#264653] w-full h-[calc(100vh-48px)] text-white" id="contenido-home">🏠 Bienvenido al HOME
+            </div>
+            <div class="contenido bg-[#264653] w-full h-[calc(100vh-48px)] text-white " id="contenido-ediciones">📚 Estas son las EDICIONES</div>
+            <div class="contenido bg-[#264653] w-full h-[calc(100vh-48px)] text-white" id="contenido-reservaciones">📅 Aquí puedes hacer RESERVACIONES</div>
+        </div>
+    </div>
+
+        
+
+
+
+</body>
+
+</html>

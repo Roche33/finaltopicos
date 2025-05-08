@@ -1,0 +1,15 @@
+.contenido {
+    display: none;
+  }
+
+  #home:checked ~ nav + div #contenido-home {
+    display: block;
+  }
+
+  #ediciones:checked ~ nav + div #contenido-ediciones {
+    display: block;
+  }
+
+  #reservaciones:checked ~ nav + div #contenido-reservaciones {
+    display: block;
+  }

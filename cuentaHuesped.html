@@ -14,26 +14,74 @@
 
     <div>
         <!-- Radios + Labels -->
-        <input type="radio" name="menu" id="home" checked hidden>
-        <input type="radio" name="menu" id="ediciones" hidden>
+        <input type="radio" name="menu" id="home" hidden>
+        <input type="radio" name="menu" id="ediciones" checked hidden>
         <input type="radio" name="menu" id="reservaciones" hidden>
 
         <nav class="bg-[#FADADD] flex justify-center p-3 gap-4 text-[#264653] shadow-md">
             <label for="home" class="tracking-wide hover:underline cursor-pointer">HOME</label>
-            <label for="ediciones" class="tracking-wide hover:underline cursor-pointer">EDICIONES</label>
+            <label for="ediciones" class="tracking-wide hover:underline cursor-pointer">INFORMACION DE CONTACTO</label>
             <label for="reservaciones" class="tracking-wide hover:underline cursor-pointer">RESERVACIONES</label>
         </nav>
 
         <!-- Contenido (hermano de los inputs y labels) -->
         <div class="p1-4">
-            <div class="contenido bg-[#264653] w-full h-[calc(100vh-48px)] text-white" id="contenido-home">🏠 Bienvenido al HOME
+            <div class="contenido bg-[#264653] w-full h-[calc(100vh-48px)] text-white" id="contenido-home">🏠 Bienvenido
+                al HOME
             </div>
-            <div class="contenido bg-[#264653] w-full h-[calc(100vh-48px)] text-white " id="contenido-ediciones">📚 Estas son las EDICIONES</div>
-            <div class="contenido bg-[#264653] w-full h-[calc(100vh-48px)] text-white" id="contenido-reservaciones">📅 Aquí puedes hacer RESERVACIONES</div>
+            <div class="contenido bg-[#264653] w-full h-[calc(100vh-48px)] text-black duration-300 ease-in"
+                id="contenido-ediciones">
+                📚 Estas son las EDICIONES
+                <div class="bg-gray-100 flex flex-col gap-4 p-6">
+                    <div class="flex flex-row items-center">
+                        <h1 class="text-xl">Informacion de cuenta</h1>
+                        <button
+                            class="bg-[#D72638]/50 text-white rounded-full text-xl px-4 py-2 hover:bg-[#D72638]/70 ml-auto"
+                            name="actualizar">Actualizar</button>
+                    </div>
+                    <div class="flex flex-row gap-4 m-auto">
+                        <div class="flex flex-col border p-3 rounded-lg w-[500px] p-8">
+                            <label for="">Nombre</label>
+                            <input type="text" class="rounded-full p-1">
+                            <label for="">Primer Apellido</label>
+                            <input type="text" class="rounded-full p-1">
+                            <label for="">Segundo Apellido</label>
+                            <input type="text" class="rounded-full p-1">
+                        </div>
+                        <div class="flex flex-col border p-3 rounded-lg w-[500px] p-8">
+                            <label for="">Direccion</label>
+                            <input type="text" class="rounded-full p-1">
+                            <label for="">Correo electronico</label>
+                            <input type="email" class="rounded-full p-1">
+                            <label for="">Telefono</label>
+                            <input type="tel" class="rounded-full p-1">
+                        </div>
+                        <div class="flex flex-col border p-3 rounded-lg w-[500px] p-8">
+                            <label for="">Username</label>
+                            <div>
+                            <input type="text" class="rounded-full p-1">
+                            <button
+                            class="bg-[#D72638]/50 text-white rounded-full text-xl px-4 py-1 hover:bg-[#D72638]/70 ml-auto"
+                            name="actualizar">Actualizar</button>
+                        </div>
+                            <label for="">Password</label>
+                            <div>
+                            <input type="password" class="rounded-full p-1">
+                            <button
+                            class="bg-[#D72638]/50 text-white rounded-full text-xl px-4 py-1 hover:bg-[#D72638]/70 ml-auto"
+                            name="actualizar">Actualizar</button>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenido bg-[#264653] w-full h-[calc(100vh-48px)] text-white" id="contenido-reservaciones">📅
+                Aquí puedes hacer RESERVACIONES</div>
         </div>
     </div>
 
-        
+
 
 
 

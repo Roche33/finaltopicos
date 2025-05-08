@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido</title>
+    <title>PRUEBA</title>
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/cuentaHuesped.css">
+    <link rel="stylesheet" href="css/prueba.css">
 </head>
 
 <body>
@@ -16,25 +16,77 @@
         <input type="radio" name="menu" id="home" checked hidden>
         <input type="radio" name="menu" id="ediciones" hidden>
         <input type="radio" name="menu" id="reservaciones" hidden>
-    
+
         <nav class="bg-[#FADADD] flex justify-center p-3 gap-4 text-[#264653] shadow-md">
-          <label for="home" class="tracking-wide hover:underline cursor-pointer">HOME</label>
-          <label for="ediciones" class="tracking-wide hover:underline cursor-pointer">EDICIONES</label>
-          <label for="reservaciones" class="tracking-wide hover:underline cursor-pointer">RESERVACIONES</label>
+            <label for="home" class="tracking-wide hover:underline cursor-pointer">HOME</label>
+            <label for="ediciones" class="tracking-wide hover:underline cursor-pointer">EDICIONES</label>
+            <label for="reservaciones" class="tracking-wide hover:underline cursor-pointer">RESERVACIONES</label>
         </nav>
-    
+
         <!-- Contenido (hermano de los inputs y labels) -->
         <div class="p-4">
-          <div class="contenido bg-[#264653] w-[1000px] h-[300px] text-white" id="contenido-home">🏠 Bienvenido al HOME</div>
-          <div class="contenido" id="contenido-ediciones">📚 Estas son las EDICIONES</div>
-          <div class="contenido" id="contenido-reservaciones">📅 Aquí puedes hacer RESERVACIONES</div>
+            <div class="contenido bg-[#264653] w-[1000px] h-[300px] text-white" id="contenido-home">🏠 Bienvenido al
+                HOME</div>
+            <div class="contenido" id="contenido-ediciones">📚 Estas son las EDICIONES</div>
+            <div class="contenido" id="contenido-reservaciones">📅 Aquí puedes hacer RESERVACIONES</div>
         </div>
-      </div>
-    
-      
+    </div>
 
-    
-    
+
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+    </label>
+
+
 </body>
-
+<footer class="bg-[url('https://images.pexels.com/photos/2339009/pexels-photo-2339009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center min-h-screen flex flex-col items-center justify-center">
+        <div class="bg-[#264653]/50 w-[400px] rounded-lg shadow-xl overflow-hidden">
+            <!-- Radios + Labels -->
+            <div class="bg-white text-black flex justify-evenly items-center p-4">
+                <label for="login" class="text-2xl hover:underline cursor-pointer transition-all duration-200">Log in</label>
+                <label for="signup" class="text-2xl tracking-wide hover:underline cursor-pointer transition-all duration-200">Sign up</label>
+            </div>
+            
+            <input type="radio" name="menu" id="login" checked class="hidden">
+            <input type="radio" name="menu" id="signup" class="hidden">
+            
+            <div class="p-4">
+                <!-- Login Form -->
+                <div id="contenido-login" class="contenido flex flex-col items-center gap-4 p-4 bg-[#D72638]/50 rounded-lg">
+                    <input type="text" class="p-3 rounded-full bg-[#264653]/50 w-full placeholder-white placeholder-opacity-80 focus:outline-none focus:ring-2 focus:ring-[#FADADD]" placeholder="Username">
+                    <input type="password" class="p-3 rounded-full bg-[#264653]/50 w-full placeholder-white placeholder-opacity-80 focus:outline-none focus:ring-2 focus:ring-[#FADADD]" placeholder="Contraseña">
+                    <button class="bg-[#FADADD]/50 text-white rounded-full text-2xl px-4 py-2 w-full hover:bg-[#FADADD]/70 transition-all duration-200" name="sesion">
+                        Iniciar sesión
+                    </button>
+                    <div class="flex justify-between w-full p-2">
+                        <a href="#" class="underline hover:text-[#D72638]/70 transition-all duration-200">¿Olvidaste tu contraseña?</a>
+                    </div>
+                </div>
+                
+                <!-- Signup Form -->
+                <div id="contenido-signup" class="contenido hidden flex-col items-center gap-4 p-4 bg-[#D72638]/50 rounded-lg">
+                    <input type="text" class="p-3 rounded-full bg-[#264653]/50 w-full placeholder-white placeholder-opacity-80 focus:outline-none focus:ring-2 focus:ring-[#FADADD]" placeholder="Nombre">
+                    <input type="email" class="p-3 rounded-full bg-[#264653]/50 w-full placeholder-white placeholder-opacity-80 focus:outline-none focus:ring-2 focus:ring-[#FADADD]" placeholder="Correo">
+                    <input type="text" class="p-3 rounded-full bg-[#264653]/50 w-full placeholder-white placeholder-opacity-80 focus:outline-none focus:ring-2 focus:ring-[#FADADD]" placeholder="Username">
+                    <input type="password" class="p-3 rounded-full bg-[#264653]/50 w-full placeholder-white placeholder-opacity-80 focus:outline-none focus:ring-2 focus:ring-[#FADADD]" placeholder="Contraseña">
+                    <button class="bg-[#FADADD]/50 text-white rounded-full text-2xl px-4 py-2 w-full hover:bg-[#FADADD]/70 transition-all duration-200" name="crear">
+                        Crear cuenta
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <style>
+            .contenido {
+                display: none;
+            }
+            
+            #login:checked ~ div #contenido-login,
+            #signup:checked ~ div #contenido-signup {
+                display: flex;
+            }
+        </style>
+    
+</footer>
 </html>

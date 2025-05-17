@@ -16,127 +16,157 @@
 <body>
 
     <div class="bg-[url('https://images.pexels.com/photos/2339009/pexels-photo-2339009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center min-h-screen flex flex-col "
-     style="font-family: 'Open Sans', sans-serif;">
-    
-    <div class="bg-[#1C1C1C]/30 backdrop-blur-md rounded-t-xl w-5/6 h-9/10 m-auto mt-12 flex-grow text-white">
-       
+        style="font-family: 'Open Sans', sans-serif;">
 
-        <header class="flex justify-around text-black text-lg py-[30px] px-[20px] w-4/5">
-            <button id="toggle-btn" class="block lg:hidden focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
+        <div class="bg-[#1C1C1C]/30 backdrop-blur-md rounded-t-xl w-5/6 h-9/10 m-auto mt-12 flex-grow text-white">
 
-            <div>
-                <a href="/Home" class="font-semibold text-3xl w-[50px]" style="text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;"><i class="fa-solid fa-torii-gate"></i></a>
-            </div>
 
-            <nav class="hidden lg:flex justify-center gap-4 font-semibold tracking-widest">
-                <a href="/Home" class="no-underline mx-4"
-                   style="text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">
-                    <i class="fa-solid fa-circle-user"></i> Inicio de sesión
-                </a>
-                <a href="/reservaciones.html" class="no-underline mx-4"
-                   style="text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">
+            <header class="flex justify-around text-black text-lg py-[30px] px-[20px] w-4/5">
+                <button id="toggle-btn" class="block lg:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                <div>
+                    <a href="/Home" class="font-semibold text-3xl w-[50px]"
+                        style="text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;"><i
+                            class="fa-solid fa-torii-gate"></i></a>
+                </div>
+
+                <nav class="hidden lg:flex justify-center gap-4 font-semibold tracking-widest">
+                    <a href="/Home" class="no-underline mx-4"
+                        style="text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">
+                        <i class="fa-solid fa-circle-user"></i> Inicio de sesión
+                    </a>
+                    <a href="/reservaciones.html" class="no-underline mx-4"
+                        style="text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">
+                        <i class="fa-solid fa-calendar-days"></i> Reservaciones
+                    </a>
+                    <a href="#" class="no-underline mx-4"
+                        style="text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">
+                        <i class="fa-solid fa-phone"></i> Contactos
+                    </a>
+                </nav>
+            </header>
+
+
+
+            <div id="mobile-menu" class="lg:hidden flex flex-col text-center px-4 py-2">
+                <a href="/reservaciones.html" class="no-underline mx-4">
                     <i class="fa-solid fa-calendar-days"></i> Reservaciones
                 </a>
-                <a href="#" class="no-underline mx-4"
-                   style="text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">
+                <a href="#" class="no-underline mx-4">
                     <i class="fa-solid fa-phone"></i> Contactos
                 </a>
-            </nav>
-        </header>
 
-        
-
-        <div id="mobile-menu" class="lg:hidden flex flex-col text-center px-4 py-2">
-            <a href="/reservaciones.html" class="no-underline mx-4">
-                <i class="fa-solid fa-calendar-days"></i> Reservaciones
-            </a>
-            <a href="#" class="no-underline mx-4">
-                <i class="fa-solid fa-phone"></i> Contactos
-            </a>
-
-        </div>
-        <!-- Contenido (hermano de los inputs y labels) -->
-        <div class="p1-4">
-
-            <div class="contenido duration-1500 ease-in" id="contenido-ediciones">
-
-                <div class="flex flex-col gap-4 p-7 w-full">
-                    <div class="flex justify-center items-center">
-                        <div class="flex flex-col items-center justify-center">
-                            <img src="~/Content/Img/calamardo.jpg" alt="Imagen" class="w-[5rem] rounded-full">
-                            <div class="p-3 text-center">
-                                <p class="text-xl">Misael Roche</p>
-                                <p class="text-sm">correo@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <form action="/Contacto/Guardar" method="post">
-                        <div class="flex flex-row flex-wrap m-auto gap-4">
-                            <div class="flex flex-1 flex-col border rounded-lg lg:w-[825px] p-8 gap-1">
-                                <label for="">Nombre</label>
-                                <input type="text" name="nombre"
-                                       class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
-                                <label for="">Primer Apellido</label>
-                                <input type="text" name="apellido1"
-                                       class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
-                                <label for="">Segundo Apellido</label>
-                                <input type="text" name="apellido2"
-                                       class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
-                                <label for="">Calle</label>
-                                <input type="text" name="calle"
-                                       class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
-                                <label for="">Numero</label>
-                                <input type="text" name="numero"
-                                       class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
-                                <label for="">Colonia</label>
-                                <input type="text" name="colonia"
-                                       class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
-                                <label for="">Codigo Postal</label>
-                                <input type="text" name="codigoPostal"
-                                       class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
-                                <label for="">Ciudad</label>
-                                <input type="text" name="ciudad"
-                                       class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
-                            </div>
-                            <div class="flex flex-1 flex-col border rounded-lg  p-8 gap-1">
-                                <label for="">Correo electronico</label>
-                                <input type="email" name="correo"
-                                       class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
-                                <label for="">Telefono</label>
-                                <input type="tel" name="celular"
-                                       class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
-                                <label for="">Username</label>
-                                <input type="text" name="usuario"
-                                       class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
-                            </div>
-                        </div>
-                        <div class="flex justify-center gap-5">
-                            <button class="bg-[#D72638]/50  rounded-full text-xl px-4 py-2 hover:bg-[#D72638]/70 "
-                                    name="actualizar">
-                                Borrar
-                            </button>
-                            <button class="bg-[#D72638]/50  rounded-full text-xl px-4 py-2 hover:bg-[#D72638]/70 "
-                                    name="actualizar" type="submit">
-                                Actualizar
-                            </button>
-
-                        </div>
-                    </form>
-                </div>
             </div>
+            <!-- Contenido (hermano de los inputs y labels) -->
+            <div class="p1-4">
 
+                <div class="contenido duration-1500 ease-in" id="contenido-ediciones">
+
+                    <div class="flex flex-col gap-4 p-7 w-full">
+                        <div class="flex justify-center items-center">
+                            <div class="flex flex-col items-center justify-center">
+                                <img id="imagenPrincipal" src="img/calamardo.jpg" alt="Imagen" class="w-[5rem] h-[4.5rem] rounded-full cursor-pointer bg-auto"
+                                    onclick="mostrarImagenes()">
+                                <div class="p-3 text-center">
+                                    <p class="text-xl">Misael Roche</p>
+                                    <p class="text-sm">correo@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="modal"
+                            class="fixed inset-0 bg-black/50 items-center justify-center hidden z-1000 flex">
+                            <form action="/InicioSesion/RecuperarContrasena" method="post">
+                                <div class="bg-[#1C1C1C]/40 p-6 rounded-lg shadow-lg w-96 flex flex-col">
+                                    <div>
+                                        <h2 class="text-lg font-bold mb-4 text-center">Elige tu avatar</h2>
+                                    </div>
+                                    <div class="flex gap-2 flex-wrap justify-center">
+                                        <img src="img/rick.jpg" alt="Imagen"
+                                            class="w-[5rem] h-[4.5rem] rounded-full cursor-pointer bg-auto" onclick="cambiarImagen(this)">
+                                        <img src="img/calamardo.jpg" alt="Imagen"
+                                            class="w-[5rem] h-[4.5rem] rounded-full cursor-pointer bg-auto" onclick="cambiarImagen(this)">
+                                            <img src="img/luffy.jpg" alt="Imagen"
+                                            class="w-[5rem] h-[4.5rem] rounded-full cursor-pointer bg-auto" onclick="cambiarImagen(this)">
+                                            <img src="img/homero.jpg" alt="Imagen"
+                                            class="w-[5rem] h-[4.5rem] rounded-full cursor-pointer bg-auto" onclick="cambiarImagen(this)">
+                                            <img src="img/uno.jpg" alt="Imagen"
+                                            class="w-[5rem] h-[4.5rem] rounded-full cursor-pointer bg-auto" onclick="cambiarImagen(this)">
+                                            <img src="img/pulga.jpg" alt="Imagen"
+                                            class="w-[5rem] h-[4.5rem] rounded-full cursor-pointer bg-auto" onclick="cambiarImagen(this)">
+
+                                    </div>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                        <form action="/Contacto/Guardar" method="post">
+                            <div class="flex flex-row flex-wrap m-auto gap-4">
+                                <div class="flex flex-1 flex-col border rounded-lg lg:w-[825px] p-8 gap-1">
+                                    <label for="">Nombre</label>
+                                    <input type="text" name="nombre"
+                                        class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
+                                    <label for="">Primer Apellido</label>
+                                    <input type="text" name="apellido1"
+                                        class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
+                                    <label for="">Segundo Apellido</label>
+                                    <input type="text" name="apellido2"
+                                        class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
+                                    <label for="">Calle</label>
+                                    <input type="text" name="calle"
+                                        class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
+                                    <label for="">Numero</label>
+                                    <input type="text" name="numero"
+                                        class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
+                                    <label for="">Colonia</label>
+                                    <input type="text" name="colonia"
+                                        class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
+                                    <label for="">Codigo Postal</label>
+                                    <input type="text" name="codigoPostal"
+                                        class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
+                                    <label for="">Ciudad</label>
+                                    <input type="text" name="ciudad"
+                                        class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
+                                </div>
+                                <div class="flex flex-1 flex-col border rounded-lg  p-8 gap-1">
+                                    <label for="">Correo electronico</label>
+                                    <input type="email" name="correo"
+                                        class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
+                                    <label for="">Telefono</label>
+                                    <input type="tel" name="celular"
+                                        class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
+                                    <label for="">Username</label>
+                                    <input type="text" name="usuario"
+                                        class="rounded-full px-3 py-2 bg-transparent border border-white/30 focus:outline-none focus:ring-1 focus:ring-[#FFFFFF]">
+                                </div>
+                            </div>
+                            <div class="flex justify-center gap-5">
+                                <button class="bg-[#D72638]/50  rounded-full text-xl px-4 py-2 hover:bg-[#D72638]/70 "
+                                    name="actualizar">
+                                    Borrar
+                                </button>
+                                <button class="bg-[#D72638]/50  rounded-full text-xl px-4 py-2 hover:bg-[#D72638]/70 "
+                                    name="actualizar" type="submit">
+                                    Actualizar
+                                </button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
 
-    
+
 
 
 </body>
 <script src="scripts.js"></script>
+
 </html>
